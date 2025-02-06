@@ -1,17 +1,36 @@
-.EventsPage{
-    color: white;
-    overflow: hidden;
+.EventDetails {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    background-image: url('../../assets/events-bg.png');
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center;
-}
-.EventContainer{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.EventDetailsContent {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.EventDetailsContent button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.EventDetailsContent button:hover {
+    background-color: #0056b3;
 }
